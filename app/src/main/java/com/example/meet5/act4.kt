@@ -38,7 +38,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
         modifier = modifier.padding(top = 50.dp),
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
-    ){
+    ) {
         OutlinedTextField(
             value = textNama,
             singleLine = true,
@@ -105,6 +105,12 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
             modifier = Modifier
                 .height(100.dp)
                 .width(300.dp)
-        )
+        ) {
+            Column(modifier = Modifier.padding(horizontal = 15.dp, vertical = 15.dp)) {
+                Text(text = "Nama : $nama", color = Color.White)
+                Text(text = "Gender : $jenis", color = Color.White)
+                Text(text = "Alamat : $alamat", color = Color.White)
+            }
+        }
     }
 }
