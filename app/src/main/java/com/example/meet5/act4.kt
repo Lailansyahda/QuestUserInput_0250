@@ -1,5 +1,11 @@
 package com.example.meet5
 
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.padding
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.unit.dp
+
 @Composable
 fun FormDataDiri(modifier: Modifier = Modifier) {
     var textNama by remember { mutableStateOf("") }
@@ -10,4 +16,12 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
     var nama by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
     var jenis by remember { mutableStateOf("") }
+
+    Column(
+        modifier = modifier.padding(top = 50.dp),
+        verticalArrangement = Arrangement.Top,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ){
+
+    }
 }
